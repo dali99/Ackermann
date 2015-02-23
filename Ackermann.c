@@ -12,14 +12,11 @@ int ack(m, n)
 
 int main(void)
 {
-  int i = 0
-  
-  while (true)
+  for (int i = 0; i > -1; i++)
   {
     for (int x = 0; x < 10; x++)
     {
       printf("%i\n", ack(i, x));
     }
-  i++
   }
 }
