@@ -10,13 +10,21 @@ int ack(m, n)
     return ack(m - 1, ack(m, n - 1))
 }
 
-int main(void)
+int main()
 {
-  for (int i = 0; i > -1; i++)
-  {
-    for (int j = i; j > -1; j--)
+    int i = 0;
+    int n = 0;
+   
+    while (1)
     {
-      ack(i,j);
+        int m = i;
+        while (m > -1)
+        {
+            printf("%i\n", ack(m, n));
+            m--;
+            n++;
+        }
+        i++;
+        n = 0;
     }
-  }
 }
