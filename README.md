@@ -41,3 +41,12 @@ Are to be iterated like
     ack(1,4)
     ack(0,5)
 
+So here's an implentation of this kind of loop in C:
+
+    for (int i = 0; i > -1; i++)
+      {
+        for (int j = i; j > -1; j--)
+        {
+          ack(i,j)
+        }
+      }
