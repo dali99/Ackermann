@@ -11,7 +11,7 @@ i, n = 0, 0
 while i < 10:
     m = i
     while m > -1:
-        print("M: " + str(m) + " N: " + str(n))
+        print(ack(m, n))
         m -= 1
         n += 1
     i += 1
