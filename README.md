@@ -43,10 +43,19 @@ Are to be iterated like
 
 So here's an implentation of this kind of loop in C:
 
-    for (int i = 0; i > -1; i++)
-      {
-        for (int j = i; j > -1; j--)
+    int i = 0;
+    int n = 0;
+   
+    while (1)
+    {
+        int m = i;
+        while (m > -1)
         {
-          ack(i,j)
+            printf("%i\n", m);
+            m--;
+            n++;
         }
-      }
+        i++;
+        n = 0;
+    }
+
