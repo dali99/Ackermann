@@ -7,8 +7,9 @@ def ack(m, n):
   elif m > 0 and n > 0:
       return ack(m - 1, ack(m, n - 1))
 
-i = 0
-while True:
-  for x in range(9):
-      print(ack(i, x))
-  i += 1
+m, n = 0, 0
+while n > -1:
+    while m > -1:
+        print(ack(m, n))
+        m += 1
+    n += 1
