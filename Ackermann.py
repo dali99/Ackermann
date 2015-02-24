@@ -8,7 +8,7 @@ def ack(m, n):
         return ack(m - 1, ack(m, n - 1))
 
 i, n = 0, 0
-while i < 10:
+while i > -1:
     m = i
     while m > -1:
         print(ack(m, n))
