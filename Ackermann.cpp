@@ -10,8 +10,8 @@ int ack(int m, int n){
 }
 
 int main(){
-	for(int m = 0; m < 10; m++)
-		for(int n = 0; n < 10; n++)
+	for(int n = 0; n > -1; n++)
+		for(int m = 0; m > -1; m++)
 			std::cout << ack(m, n) << std::endl;
 
 	return 0;

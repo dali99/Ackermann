@@ -4,14 +4,12 @@ var ack = function(m, n){
     }else if(m > 0 && n === 0){
         return ack(m - 1, 1);
     }else if(m > 0 && n > 0){
-        return ack(m - 1, ack(n, m - 1))
+        return ack(m - 1, ack(n, m - 1));
     }
-}
+};
 
-var m = 0;
-var n = 0;
-while(true){
-    console.log(ack(m, n))
-    m++;
-    n++;
+for(n = 0; n > -1; n++){
+    for(m = 0; m > -1; m++){
+        console.log(ack(m, n));
+    }
 }
