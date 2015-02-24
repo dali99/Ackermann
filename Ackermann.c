@@ -14,9 +14,9 @@ int main(void)
 {
   for (int i = 0; i > -1; i++)
   {
-    for (int x = 0; x < 10; x++)
+    for (int j = i; j > -1; j--)
     {
-      printf("%i\n", ack(i, x));
+      ack(i,j)
     }
   }
 }
