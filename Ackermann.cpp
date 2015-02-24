@@ -10,9 +10,17 @@ int ack(int m, int n){
 }
 
 int main(){
-	for(int n = 0; n > -1; n++)
-		for(int m = 0; m > -1; m++)
+	int i = 0, n = 0;
+	while(i > -1){
+		int m = i;
+		while(m > -1){
 			std::cout << ack(m, n) << std::endl;
+			m--;
+			n++;
+		}
+		i++;
+		n = 0;
+	}
 
 	return 0;
 }
