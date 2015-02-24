@@ -5,6 +5,7 @@ ack = (m, n) ->
 
 while true
     m = i
+    n = 0
     while m > -1
         print(ack(m, n))
         m--
