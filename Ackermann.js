@@ -8,8 +8,15 @@ var ack = function(m, n){
     }
 };
 
-for(n = 0; n > -1; n++){
-    for(m = 0; m > -1; m++){
+var i = 0;
+var n = 0;
+while(i > -1){
+    var m = i;
+    while(m > -1){
         console.log(ack(m, n));
+        m--;
+        n++;
     }
+    i++;
+    n = 0;
 }

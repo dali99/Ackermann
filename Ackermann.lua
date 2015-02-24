@@ -8,11 +8,14 @@ local function ack(m, n)
     end
 end
 
-local m, n = 0, 0
-while n > -1 do
+local i, n = 0, 0
+while i > -1 do
+    local m = i
     while m > -1 do
         print(ack(m, n))
-        m = m + 1
+        m = m - 1
+        n = n + 1
     end
-    n = n + 1
+    i = i + 1
+    n = 0
 end
