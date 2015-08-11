@@ -1,5 +1,5 @@
-# Ackerman
-Collection of Ackermans function in multiple programming languages
+# Ackermann
+Collection of Ackermanns function in multiple programming languages
 
 Are to be iterated in a way that computes every value possible, order isn't that important
 
